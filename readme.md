@@ -12,20 +12,20 @@ A simple task scheduler for JavaScript with support for recurring tasks, pause/r
 
 ## Installation
 
-To install `scheduler-js`, run the following npm command:
+To install `simple-chronos-scheduler-js`, run the following npm command:
 
 ```bash
-npm install scheduler-js
+npm install simple-chronos-scheduler-js
 ```
 
 If you're using the package in a Node.js environment or as part of your front-end build, you can import the Scheduler class as follows:
 ```javascript
-const { Scheduler } = require('scheduler-js');
+const { Scheduler } = require('simple-chronos-scheduler-js');
 ```
 
 For ES Modules, you can import it like this:
 ```javascript
-import { Scheduler } from 'scheduler-js';
+import { Scheduler } from 'simple-chronos-scheduler-js';
 ```
 
 ```javascript
