@@ -1,0 +1,27 @@
+{
+  "name": "simple-chronos-scheduler-js",
+  "version": "1.0.0",
+  "description": "A simple task scheduler with recurring tasks and pause/resume functionality.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "author": "trustour9@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangsnapify/simple-chronos-scheduler-js"
+  },
+  "keywords": [
+    "scheduler",
+    "task",
+    "recurring",
+    "timer",
+    "pause"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}
