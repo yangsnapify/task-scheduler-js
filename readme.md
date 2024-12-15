@@ -1,4 +1,4 @@
-# Scheduler.js
+# Simple-chronos-scheduler-js.js
 
 A simple task scheduler for JavaScript with support for recurring tasks, pause/resume functionality, and task management. This library allows you to schedule tasks with a specified delay, execute them once, or make them recurring. You can also pause and resume tasks as needed.
 
