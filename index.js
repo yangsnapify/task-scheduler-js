@@ -25,6 +25,7 @@
 
             this.tasks[this.taskId] = task;
             this.runTask(task);
+            return task;
         }
 
         /**

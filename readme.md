@@ -20,19 +20,14 @@ npm install task-scheduler-js
 
 If you're using the package in a Node.js environment or as part of your front-end build, you can import the Scheduler class as follows:
 ```javascript
-const { Scheduler } = require('task-scheduler-js');
-```
-
-For ES Modules, you can import it like this:
-```javascript
-import { Scheduler } from 'task-scheduler-js';
+const Scheduler = require('task-scheduler-js');
 ```
 
 ```javascript
 const sche = new Scheduler();
 
 // Adds a one-time task (executes after 1 second)
-sche.addTask(() => console.log('Task executed once'), 1000, false);
+const t1 = sche.addTask(() => console.log('Task executed once'), 1000, false);
 
 // Adds a recurring task (executes every 2 seconds)
 sche.addTask(() => console.log('Recurring task executed'), 2000, true);
@@ -40,18 +35,18 @@ sche.addTask(() => console.log('Recurring task executed'), 2000, true);
 // Pause the recurring task after 5 seconds
 setTimeout(() => {
     console.log("Pausing the recurring task...");
-    sche.pauseTask(2);  // Assuming task ID 2 is the recurring task
+    sche.pauseTask(t1.id);  // Assuming task ID 2 is the recurring task
 }, 5000);
 
 // Resume the task after 8 seconds
 setTimeout(() => {
     console.log("Resuming the recurring task...");
-    sche.resumeTask(2);  // Resumes the recurring task
+    sche.resumeTask(t1.id);  // Resumes the recurring task
 }, 8000);
 
 // Removes the one-time task after 3 seconds
 setTimeout(() => {
     console.log("Removing the one-time task...");
-    sche.removeTask(1);  // Removes the task with ID 1
+    sche.removeTask(t1.id);  // Removes the task with ID 1
 }, 3000);
 ```

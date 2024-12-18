@@ -1,6 +1,6 @@
 {
   "name": "task-scheduler-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple task scheduler with recurring tasks and pause/resume functionality.",
   "main": "index.js",
   "scripts": {
