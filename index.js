@@ -1,4 +1,6 @@
 (function (global) {
+    const isNode = typeof window === 'undefined';
+
     class Scheduler {
         constructor() {
             this.taskId = 0;
@@ -84,9 +86,9 @@
         }
     }
 
-    if (typeof module !== 'undefined' && module.exports) {
+    if (isNode) {
         module.exports = Scheduler;
     } else {
         global.Scheduler = Scheduler;
     }
-})(this);
+})(globalThis);

@@ -1,10 +1,11 @@
 {
   "name": "task-scheduler-js",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A simple task scheduler with recurring tasks and pause/resume functionality.",
-  "main": "index.js",
+  "main": "dist.js",
   "scripts": {
-    "test": "echo \"No tests yet\" && exit 0"
+    "test": "echo \"No tests yet\" && exit 0",
+    "build": "babel index.js --out-file dist.js"
   },
   "author": "trustour9@gmail.com",
   "license": "MIT",
